@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.food.FoodListActivity">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:drawingCacheQuality="auto"
+            />
+
+
+    </LinearLayout>
+
+    <com.exarlabs.android.com.tmlparseandroiddemo.ui.HeaderGridView
+        android:id="@+id/foodlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="@dimen/padding_tiny"
+        android:horizontalSpacing="@dimen/padding_tiny"
+        android:numColumns="2">
+
+
+    </com.exarlabs.android.com.tmlparseandroiddemo.ui.HeaderGridView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email"/>
+
+</android.support.design.widget.CoordinatorLayout>

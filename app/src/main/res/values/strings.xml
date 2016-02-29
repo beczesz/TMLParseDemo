@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="parse_app_id">8AnM14JfIduuUCeHzqjKf81XNUL1DmSfsx8Q8g09</string>
+    <string name="parse_client_key">TJEu75kNLtQ7XH3GxDhXz578PxoGlkh9N4G4CVy6</string>
+
+
+    <string name="app_name">TMLParseAndroidDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_apply">Apply</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="header_image_url">http://www.lachamade.com/wp-content/uploads/2013/11/table-restaurant.jpg</string>
+</resources>

@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.exarlabs.android.com.tmlparseandroiddemo"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+
+
+    // ------------------------------------------------------------------------
+    // TOOLS
+    // ------------------------------------------------------------------------
+    // Dependency Injection
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.parse:parse-android:1.10.3'
+
+    // ------------------------------------------------------------------------
+    // UI
+    // ------------------------------------------------------------------------
+    compile 'com.norbsoft.typefacehelper:library:0.9.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.victor:lib:1.0.4'
+
+    // ------------------------------------------------------------------------
+    // Development / Analytics
+    // ------------------------------------------------------------------------
+    compile 'com.facebook.stetho:stetho:1.3.0'
+
+
+}
